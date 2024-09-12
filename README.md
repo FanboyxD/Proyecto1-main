@@ -1,7 +1,7 @@
 ## Proyecto1 MPointer
 
-Autor: Fabricio Mena Mejia
-Profesor: Luis Alonso Barboza Artavia
+Autor: Fabricio Mena Mejia  
+Profesor: Luis Alonso Barboza Artavia  
 Curso: Datos II
 
 
