@@ -8,7 +8,7 @@ Extensiones necesarias: clandg, CodeLLDB, Makefile Tools, C/C++, C/C++Extension 
 Sistema operativo: Ubuntu 24.04.1 LTS
 Editor de codigo: Visual Studio Code
 
-##Requisitos
+#Requisitos
 Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
 Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
 las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: 
@@ -27,13 +27,13 @@ Una vez realizado esto va a ser necesario crear un directorio de compilacion par
 ~cmake ..
 ~make
 Una vez se crea este directorio dentro de nuestra carpeta con pruebas unitarias hay que modificar o crear el archivo CMakeLists.txt, donde se ingresan las configuraciones para que las pruebas corran, donde lo principal a modificar es:
-# Configuración de Google Test
+Configuración de Google Test
 add_subdirectory(${PROJECT_SOURCE_DIR}/PruebasUnitarias) // reemplazar PruebasUnitarias por el nombre del subdirectorio donde estan las pruebas unitarias
 
-# Agregar los archivos de prueba
+Agregar los archivos de prueba
 add_executable(test_quick_sort ${PROJECT_SOURCE_DIR}/PruebasUnitarias/test_quick_sort.cpp) // reemplazar test_quick_sort.cpp por el nombre del programa con las pruebas unitarias
 
-# Enlazar con Google Test
+Enlazar con Google Test
 target_link_libraries(test_quick_sort gtest gtest_main pthread) // reemplazar test_quick_sort por el nombre del programa con las pruebas unitarias
 
 El compilador utilizado es clangd, asi que es necesario agregar dicha extension al vs code al igual que la extension de CodeLLDB.
@@ -44,7 +44,7 @@ La eleccion de clangd se dee a que su integracion con linux es muy buena, asi ev
 es que  hay que compilar y ejecutar el codigo desde la consola, asi que hay que tener bien ubicado el path donde esta el proyecto, para que se pueda 
 encontrar el codigo target.
 
-##Compilacion y Ejecucion
+#Compilacion y Ejecucion
 Cada codigo tiene un comentario al final donde se indica la version de clangd en la que corren, la ruta de la ubicacion del programa (debe reemplazar esta ruta con su propia ruta donde descargo el proyecto) y el nombre de este.
 Primero se abre una terminal desde la ubicacion principal del proyecto, luego se copia y se pega el comando que esta debajo del comentario que dice 
 "Compilar con: " en la terminal y se da enter, una vez compilado el programa se ejecuta con el comando que indica la ubicacion del programa (debe reemplazar esta ubicacion con la ruta donde se encuentra descargado el archivo del proyecto que desea ejecutar) seguido de su nombre, el cual se encuentra debajo del comentario de "Ejecutar con:", los resultados de su ejecucion se muestran en el output de la terminal.
