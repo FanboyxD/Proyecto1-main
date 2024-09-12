@@ -13,20 +13,20 @@ Curso: Datos II
 * Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
 * Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
 las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: 
-~sudo apt-get update
-~sudo apt-get install build-essential cmake 
+~`sudo apt-get update`
+~`sudo apt-get install build-essential cmake`
 Luego para instalar la libreria de googletest se utiliza el siguiente comando:
-~sudo apt-get install libgtest-dev
+~`sudo apt-get install libgtest-dev`
 Y para compilar el codigo fuente se necesitan correr los siguientes comandos:
-~cd /usr/src/gtest
-~sudo cmake CMakeLists.txt
-~sudo make
-~sudo cp lib/libgtest*.a /usr/lib
+~`cd /usr/src/gtest`
+~`sudo cmake CMakeLists.txt`
+~`sudo make`
+~`sudo cp lib/libgtest*.a /usr/lib`
 Una vez realizado esto va a ser necesario crear un directorio de compilacion para realizar las pruebas, para esto hay que dirigirse al directorio donde estaran las pruebas unitarias y crearlo con los siguientes comandos:
-~mkdir build
-~cd build
-~cmake ..
-~make
+~`mkdir build`
+~`cd build`
+~`cmake ..`
+~`make`
 Una vez se crea este directorio dentro de nuestra carpeta con pruebas unitarias hay que modificar o crear el archivo CMakeLists.txt, donde se ingresan las configuraciones para que las pruebas corran, donde lo principal a modificar es:
 Configuración de Google Test
 add_subdirectory(${PROJECT_SOURCE_DIR}/PruebasUnitarias) // reemplazar PruebasUnitarias por el nombre del subdirectorio donde estan las pruebas unitarias
@@ -38,7 +38,7 @@ Enlazar con Google Test
 target_link_libraries(test_quick_sort gtest gtest_main pthread) // reemplazar test_quick_sort por el nombre del programa con las pruebas unitarias
 
 * El compilador utilizado es clangd, asi que es necesario agregar dicha extension al vs code al igual que la extension de CodeLLDB.
-Ademas es recomendable instalarlo desde la terminal mediante el uso del comando ~sudo apt-get install clangd-12.
+Ademas es recomendable instalarlo desde la terminal mediante el uso del comando ~`sudo apt-get install clangd-12`.
 Despues de descargar esto es necesario deshabilitar las extensiones de c++, ya que es necesario para cambiar de compilador; al realizar este cambio
 tambien se deshabilitaran las extensiones de CMake y CMake Tools, pero a pesar de esta si se van a poder ejecutar las pruebas unitarias de GTest.
 La eleccion de clangd se dee a que su integracion con linux es muy buena, asi evita ciertos errores a la hora de ejecutar el codigo, pero una desventaja 
