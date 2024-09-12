@@ -12,7 +12,7 @@ Curso: Datos II
 * Editor de codigo: Visual Studio Code
 * Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
 * Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
-las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: 
+las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: \\
 ~`sudo apt-get update`
 ~`sudo apt-get install build-essential cmake`
 Luego para instalar la libreria de googletest se utiliza el siguiente comando:
