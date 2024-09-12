@@ -164,7 +164,7 @@ public:
 
     // Method to get the current reference count
     size_t GetRefCount() const {
-        return *ref_count; // Return the current reference count
+        return *ref_count; // Retorna estado actual de contador de referencias
     }
 
     // Operador ! para verificar si el puntero es nulo
