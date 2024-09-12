@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "/home/fabricio/Documents/Prueba C/Proyecto1-main/PruebasUnitarias",
+    "cmake.ignoreCMakeListsMissing": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.arguments": ["--compile-commands-dir=."],
+  "clangd.path": "/usr/bin/clangd"
+}

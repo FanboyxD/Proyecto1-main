@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/run_all_tests.dir/test_quicksort.cpp.o CMakeFiles/run_all_tests.dir/test_insertionsort.cpp.o CMakeFiles/run_all_tests.dir/test_bubblesort.cpp.o CMakeFiles/run_all_tests.dir/test_mpointer.cpp.o CMakeFiles/run_all_tests.dir/test_doubly_linked_list.cpp.o -o run_all_tests  /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 

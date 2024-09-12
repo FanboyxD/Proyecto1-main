@@ -1,0 +1,3 @@
+/home/fabricio/Documents/Prueba C/Proyecto1-main/PruebasUnitarias/build/CMakeFiles/run_all_tests.dir
+/home/fabricio/Documents/Prueba C/Proyecto1-main/PruebasUnitarias/build/CMakeFiles/edit_cache.dir
+/home/fabricio/Documents/Prueba C/Proyecto1-main/PruebasUnitarias/build/CMakeFiles/rebuild_cache.dir
