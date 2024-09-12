@@ -28,14 +28,14 @@ Una vez realizado esto va a ser necesario crear un directorio de compilacion par
 ~`cmake ..`  
 ~`make`  
 Una vez se crea este directorio dentro de nuestra carpeta con pruebas unitarias hay que modificar o crear el archivo CMakeLists.txt, donde se ingresan las configuraciones para que las pruebas corran, donde lo principal a modificar es:  
-Configuración de Google Test
-add_subdirectory(${PROJECT_SOURCE_DIR}/PruebasUnitarias) // reemplazar PruebasUnitarias por el nombre del subdirectorio donde estan las pruebas unitarias
+Configuración de Google Test  
+add_subdirectory(${PROJECT_SOURCE_DIR}/PruebasUnitarias) // reemplazar PruebasUnitarias por el nombre del subdirectorio donde estan las pruebas unitarias  
 
-Agregar los archivos de prueba
-add_executable(test_quick_sort ${PROJECT_SOURCE_DIR}/PruebasUnitarias/test_quick_sort.cpp) // reemplazar test_quick_sort.cpp por el nombre del programa con las pruebas unitarias
+Agregar los archivos de prueba  
+add_executable(test_quick_sort ${PROJECT_SOURCE_DIR}/PruebasUnitarias/test_quick_sort.cpp) // reemplazar test_quick_sort.cpp por el nombre del programa con las pruebas unitarias  
 
-Enlazar con Google Test
-target_link_libraries(test_quick_sort gtest gtest_main pthread) // reemplazar test_quick_sort por el nombre del programa con las pruebas unitarias
+Enlazar con Google Test  
+target_link_libraries(test_quick_sort gtest gtest_main pthread) // reemplazar test_quick_sort por el nombre del programa con las pruebas unitarias  
 
 * El compilador utilizado es clangd, asi que es necesario agregar dicha extension al vs code al igual que la extension de CodeLLDB.
 Ademas es recomendable instalarlo desde la terminal mediante el uso del comando ~`sudo apt-get install clangd-12`.
