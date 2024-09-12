@@ -12,22 +12,22 @@ Curso: Datos II
 * Editor de codigo: Visual Studio Code
 * Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
 * Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
-las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: //
-~`sudo apt-get update`
-~`sudo apt-get install build-essential cmake`
-Luego para instalar la libreria de googletest se utiliza el siguiente comando:
-~`sudo apt-get install libgtest-dev`
-Y para compilar el codigo fuente se necesitan correr los siguientes comandos:
-~`cd /usr/src/gtest`
-~`sudo cmake CMakeLists.txt`
-~`sudo make`
-~`sudo cp lib/libgtest*.a /usr/lib`
-Una vez realizado esto va a ser necesario crear un directorio de compilacion para realizar las pruebas, para esto hay que dirigirse al directorio donde estaran las pruebas unitarias y crearlo con los siguientes comandos:
-~`mkdir build`
-~`cd build`
-~`cmake ..`
-~`make`
-Una vez se crea este directorio dentro de nuestra carpeta con pruebas unitarias hay que modificar o crear el archivo CMakeLists.txt, donde se ingresan las configuraciones para que las pruebas corran, donde lo principal a modificar es:
+las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos:  
+~`sudo apt-get update`  
+~`sudo apt-get install build-essential cmake`  
+Luego para instalar la libreria de googletest se utiliza el siguiente comando:  
+~`sudo apt-get install libgtest-dev`  
+Y para compilar el codigo fuente se necesitan correr los siguientes comandos:  
+~`cd /usr/src/gtest`  
+~`sudo cmake CMakeLists.txt`  
+~`sudo make`  
+~`sudo cp lib/libgtest*.a /usr/lib`  
+Una vez realizado esto va a ser necesario crear un directorio de compilacion para realizar las pruebas, para esto hay que dirigirse al directorio donde estaran las pruebas unitarias y crearlo con los siguientes comandos:  
+~`mkdir build`  
+~`cd build`  
+~`cmake ..`  
+~`make`  
+Una vez se crea este directorio dentro de nuestra carpeta con pruebas unitarias hay que modificar o crear el archivo CMakeLists.txt, donde se ingresan las configuraciones para que las pruebas corran, donde lo principal a modificar es:  
 Configuración de Google Test
 add_subdirectory(${PROJECT_SOURCE_DIR}/PruebasUnitarias) // reemplazar PruebasUnitarias por el nombre del subdirectorio donde estan las pruebas unitarias
 
