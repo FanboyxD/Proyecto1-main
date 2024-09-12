@@ -47,10 +47,10 @@ es que  hay que compilar y ejecutar el codigo desde la consola, asi que hay que 
 encontrar el codigo target.
 
 # Compilacion y Ejecucion
-Cada codigo tiene un comentario al final donde se indica la version de clangd en la que corren, la ruta de la ubicacion del programa (debe reemplazar esta ruta con su propia ruta donde descargo el proyecto) y el nombre de este.
+Cada codigo tiene un comentario al final donde se indica la version de clangd en la que corren, la ruta de la ubicacion del programa (debe reemplazar esta ruta con su propia ruta donde descargo el proyecto) y el nombre de este.  
 Primero se abre una terminal desde la ubicacion principal del proyecto, luego se copia y se pega el comando que esta debajo del comentario que dice 
 "Compilar con: " en la terminal y se da enter, una vez compilado el programa se ejecuta con el comando que indica la ubicacion del programa (debe reemplazar esta ubicacion con la ruta donde se encuentra descargado el archivo del proyecto que desea ejecutar) seguido de su nombre, el cual se encuentra debajo del comentario de "Ejecutar con:", los resultados de su ejecucion se muestran en el output de la terminal.
 
 # Uso de Biblioteca
 Para hacer uso de este puntero es necesario importar la biblioteca que se encuentra en la carpeta de "Templates", para hacer esto se extrae el archivo llamado MPointer.h, y se ubica en la misma ruta donde se encuentra el codigo o proyecto donde se desee utilizar.
-Una vez ubicada la biblioteca en el lugar donde se desea trabajar, esta se importa al proyecto mediante `# include "MPointer.h"`
+Una vez ubicada la biblioteca en el lugar donde se desea trabajar, esta se importa al proyecto mediante `#include "MPointer.h"`, y una vez realizado este include se puede empezar a trabajar con los metodos implementados en la biblioteca, hay que ser cuidadoso con los operadores `&` y `*` ya que sus funciones estan invertidas con respecto a los punteros normales.
