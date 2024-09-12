@@ -4,13 +4,14 @@ Autor: Fabricio Mena Mejia
 Profesor: Luis Alonso Barboza Artavia
 Curso: Datos II
 
-Extensiones necesarias: clandg, CodeLLDB, Makefile Tools, C/C++, C/C++Extension Pack, CMake, CMake Tools.
-Sistema operativo: Ubuntu 24.04.1 LTS
-Editor de codigo: Visual Studio Code
+
 
 # Requisitos
-Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
-Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
+* Extensiones necesarias: clandg, CodeLLDB, Makefile Tools, C/C++, C/C++Extension Pack, CMake, CMake Tools.
+* Sistema operativo: Ubuntu 24.04.1 LTS
+* Editor de codigo: Visual Studio Code
+* Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
+* Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
 las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: 
 ~sudo apt-get update
 ~sudo apt-get install build-essential cmake 
@@ -36,7 +37,7 @@ add_executable(test_quick_sort ${PROJECT_SOURCE_DIR}/PruebasUnitarias/test_quick
 Enlazar con Google Test
 target_link_libraries(test_quick_sort gtest gtest_main pthread) // reemplazar test_quick_sort por el nombre del programa con las pruebas unitarias
 
-El compilador utilizado es clangd, asi que es necesario agregar dicha extension al vs code al igual que la extension de CodeLLDB.
+* El compilador utilizado es clangd, asi que es necesario agregar dicha extension al vs code al igual que la extension de CodeLLDB.
 Ademas es recomendable instalarlo desde la terminal mediante el uso del comando ~sudo apt-get install clangd-12.
 Despues de descargar esto es necesario deshabilitar las extensiones de c++, ya que es necesario para cambiar de compilador; al realizar este cambio
 tambien se deshabilitaran las extensiones de CMake y CMake Tools, pero a pesar de esta si se van a poder ejecutar las pruebas unitarias de GTest.
