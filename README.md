@@ -8,7 +8,7 @@ Extensiones necesarias: clandg, CodeLLDB, Makefile Tools, C/C++, C/C++Extension 
 Sistema operativo: Ubuntu 24.04.1 LTS
 Editor de codigo: Visual Studio Code
 
-#Requisitos
+# Requisitos
 Este codigo fue desarrollado en ubuntu por ende es recomendable utilizar este sistema operativo para compilar el proyecto.
 Es recomendable primero crear los archivos de googletest en el proyecto para que a partir de ellos se pueda trabajar en los demas codigos; para ello hay que instalar
 las dependencias necesarias, en la terminal del proyecto se deben correr los siguientes comandos: 
@@ -44,7 +44,7 @@ La eleccion de clangd se dee a que su integracion con linux es muy buena, asi ev
 es que  hay que compilar y ejecutar el codigo desde la consola, asi que hay que tener bien ubicado el path donde esta el proyecto, para que se pueda 
 encontrar el codigo target.
 
-#Compilacion y Ejecucion
+# Compilacion y Ejecucion
 Cada codigo tiene un comentario al final donde se indica la version de clangd en la que corren, la ruta de la ubicacion del programa (debe reemplazar esta ruta con su propia ruta donde descargo el proyecto) y el nombre de este.
 Primero se abre una terminal desde la ubicacion principal del proyecto, luego se copia y se pega el comando que esta debajo del comentario que dice 
 "Compilar con: " en la terminal y se da enter, una vez compilado el programa se ejecuta con el comando que indica la ubicacion del programa (debe reemplazar esta ubicacion con la ruta donde se encuentra descargado el archivo del proyecto que desea ejecutar) seguido de su nombre, el cual se encuentra debajo del comentario de "Ejecutar con:", los resultados de su ejecucion se muestran en el output de la terminal.
