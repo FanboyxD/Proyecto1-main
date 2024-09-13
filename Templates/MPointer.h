@@ -162,7 +162,7 @@ public:
         return ptr;
     }
 
-    // Method to get the current reference count
+    // Metodo para obtener conteo actual de referencias
     size_t GetRefCount() const {
         return *ref_count; // Retorna estado actual de contador de referencias
     }
