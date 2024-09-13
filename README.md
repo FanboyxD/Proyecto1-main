@@ -53,4 +53,6 @@ Primero se abre una terminal desde la ubicacion principal del proyecto, luego se
 
 # Uso de Biblioteca
 Para hacer uso de este puntero es necesario importar la biblioteca que se encuentra en la carpeta de "Templates", para hacer esto se extrae el archivo llamado MPointer.h, y se ubica en la misma ruta donde se encuentra el codigo o proyecto donde se desee utilizar.
-Una vez ubicada la biblioteca en el lugar donde se desea trabajar, esta se importa al proyecto mediante `#include "MPointer.h"`, y una vez realizado este include se puede empezar a trabajar con los metodos implementados en la biblioteca, hay que ser cuidadoso con los operadores `&` y `*` ya que sus funciones estan invertidas con respecto a los punteros normales.
+Una vez ubicada la biblioteca en el lugar donde se desea trabajar, esta se importa al proyecto mediante `#include "MPointer.h"`, y una vez realizado este include se puede empezar a trabajar con los metodos implementados en la biblioteca, hay que ser cuidadoso con los operadores `&` y `*` ya que sus funciones estan invertidas con respecto a los punteros normales.  
+Para crear un puntero se hace mediante `MPointer<int> myPtr = MPointer<int>::New();` donde `myPtr` es el nombre del puntero donde se almacena el entero.  
+Para guardar un valor se hace mediante `*myPtr = 5` y para obtener el valor del dato guardado se hace mediante `int valor = &myPtr;`; una forma adicional de  almacenar un dato en un puntero es la siguiente `myPtr = 6`.
